@@ -33,9 +33,10 @@ if ($subtotal > 10) {
         <p>Subtotal: <?= $subtotal?> </p>
         <p>Tax: <?= $tax?> </p>
         <p>Discount: <?= $discount ?> </p>
-        <p>Total: **<?= $total?>** </p>
+        <p>Total: <?= $total?> </p>
         <p><em><?= $final_message ?></em></p>
 
 
 </body>
 </html>
+
