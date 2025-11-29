@@ -6,6 +6,14 @@ $nutrition = [
     'sugar' => 51,
     'salt' => 6.3,
 ];
+
+//Conditional statement to detect sugar content.
+if ($nutrition['sugar'] > 50) {
+    $health_rating = "WARNING: Extremely High Sugar Content!";
+} else {
+    $health_rating = "Sugar content is within reasonable limits.";
+}
+// -----------------------------
 ?>
 
 <!DOCTYPE html>
@@ -23,5 +31,8 @@ $nutrition = [
         <p>Fat: <?php echo $nutrition['fat']; ?>%</p>
         <p>Sugar: <?php echo $nutrition['sugar']; ?>%</p>
         <p>Salt: <?php echo $nutrition['salt']; ?>%</p>
+        
+        <p><b>Health Status:</b> <?php echo $health_rating; ?></p>
+        
 </body>
 </html>
