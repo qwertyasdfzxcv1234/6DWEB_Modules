@@ -12,8 +12,13 @@ $favorites = ['Chocolate','Toffee', 'Fundge',];
     <body>
         <h1> The Candy Store </h1>
         <h2>Welcome <?php echo $name; ?> </h2>
-        <p>Yooour favorite type of candy is:
-            <?= $favorites[1]; ?></p>
+        <p>Your favorite types of candy are:</p>
+            <?php
+            //Loop statement to print favorite candies
+            foreach ($favorites as $candy) {
+                echo "<p>- " . $candy . "</p>";
+            }
+            ?>
 
 </body>
 </html>
